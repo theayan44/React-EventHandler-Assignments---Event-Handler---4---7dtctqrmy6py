@@ -8,12 +8,12 @@ const App = () => {
     if (numClicks === 1) {
       singleClickTimer = setTimeout(() => {
         numClicks = 0;
-        console.log("single click!");
+        console.log("I was not double clicked");
       }, 400);
     } else if (numClicks === 2) {
       clearTimeout(singleClickTimer);
       numClicks = 0;
-      console.log("double click!");
+      console.log("I was double clicked");
     }
   };
 
